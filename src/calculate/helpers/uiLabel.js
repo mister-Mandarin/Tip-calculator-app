@@ -1,7 +1,11 @@
-import styles from './Label.module.css'
+import styles from './uiLabel.module.css'
+import cn from 'classnames'
 
-export default function Label({label}) {
+export default function UiLabel({label, className}) {
     return (
-        <span className={styles.textLabel}>{label}</span>
+        <span className={cn(styles.textLabel, {
+                [styles.errorMessage]: className
+            }
+        )}>{label}</span>
     )
 }
