@@ -1,0 +1,19 @@
+.textLabel {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.errorMessage {
+    color: var(--red);
+    position: absolute;
+    right: 0;
+    top: -19px;
+}
+
+@media (max-width: 380px) {
+    .errorMessage {
+        position: static;
+    }
+}
